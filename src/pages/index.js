@@ -52,11 +52,10 @@ export default class IndexPage extends Component {
               value={this.state.textarea}
               onChange={this.handleChange}>
         </textarea>
-        <p id="preview"
+        <div id="preview"
           dangerouslySetInnerHTML={this.setMarkdown()}
         >
-
-        </p>
+        </div>
       </Layout>
     )
   }
