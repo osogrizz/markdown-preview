@@ -15,7 +15,7 @@ export default class IndexPage extends Component {
     super(props)
 
     this.state = {
-      textarea: ' ``` \n code block \n ```    \n  `code` \n # Hello World \n ## Hello World \n ### Hello World \n --- \n [Im an inline-style link](https://www.google.com) \n\n ---  \n ```     more code     ``` \n * list item\n --- \n ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") \n __bold__ '
+      textarea: ' ``` \n code block \n ```    \n  `code` \n # Hello World \n ## Hello World \n ### Hello World \n --- \n [Im an inline-style link](https://www.google.com) \n\n ---  \n * list item\n --- \n ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") \n __bold__ '
     }
     this.handleChange = this.handleChange.bind(this)
 
