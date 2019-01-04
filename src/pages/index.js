@@ -15,10 +15,10 @@ export default class IndexPage extends Component {
     super(props)
 
     this.state = {
-      textarea: ' ``` \n code block \n ```    \n  `code` \n # Hello World \n ## Hello World \n ### Hello World \n --- \n [Im an inline-style link](https://www.google.com) \n\n ---  \n * list item\n --- \n ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") \n __bold__ \n > Block quote'
+      textarea: ' ``` \n code block \n ```  \n \n --- \n   `code` \n \n  --- \n # Hello World \n ## Hello World \n ### Hello World \n --- \n [Im an inline-style link](https://www.google.com) \n \n ---  \n * list item \n \n --- \n ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") \n \n --- \n __bold__ \n \n --- \n > Block quote'
     }
     this.handleChange = this.handleChange.bind(this)
-
+    this.setMarkdown = this.setMarkdown.bind(this)
   }
   handleChange = (e) => {
     e.preventDefault()
@@ -44,6 +44,7 @@ export default class IndexPage extends Component {
 
     render() {
     const { textarea } = this.state
+    // <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"/>
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
