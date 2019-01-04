@@ -32,8 +32,8 @@ export default class IndexPage extends Component {
       let md = new Remarkable({
         html: true,
         xhtmlOut: true,
-        linkify: true,
-        typographer: true,
+        // linkify: true, // removed to pass FCC test.
+        // typographer: true,
         breaks: true
       })
       return {
@@ -44,7 +44,6 @@ export default class IndexPage extends Component {
 
     render() {
     const { textarea } = this.state
-    // <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"/>
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
