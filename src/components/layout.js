@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
 
 
 import Header from './header'
@@ -20,10 +19,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Helmet>
-          <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"/>
-          <script src="https://unpkg.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
-        </Helmet>  
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{

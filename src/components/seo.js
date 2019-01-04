@@ -60,7 +60,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+          <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"/>
+          <script src="https://unpkg.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
+          </Helmet>
         )
       }}
     />
